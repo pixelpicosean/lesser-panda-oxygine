@@ -293,6 +293,11 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Mac;
+				TargetAttributes = {
+					04998CEB17F8A933003441C3 = {
+						DevelopmentTeam = 64F94RV7VT;
+					};
+				};
 			};
 			buildConfigurationList = 04998CE717F8A933003441C3 /* Build configuration list for PBXProject "HelloMac_ios" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -478,6 +483,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 64F94RV7VT;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HelloMac/HelloMac_ios-Prefix.pch";
 				GCC_WARN_UNUSED_VALUE = YES;
@@ -503,6 +509,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 64F94RV7VT;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HelloMac/HelloMac_ios-Prefix.pch";
 				GCC_WARN_UNUSED_VALUE = YES;
