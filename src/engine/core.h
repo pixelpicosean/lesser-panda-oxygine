@@ -4,13 +4,14 @@
 #include "Game.h"
 
 #include <functional>
-#include <string>
 
 namespace lp {
 
+  static const char* version = "v0.0.1";
+
   class engine {
     public:
-      static std::string version;
+      static char* version;
 
       static Game* game;
       static float speed;

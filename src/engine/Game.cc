@@ -5,45 +5,28 @@
 
 namespace lp {
 
-  System* Game::sys(const char *name) {
-    auto i = this->namedSystems.find(name);
-    if (i != this->namedSystems.end()) {
-      return i->second;
-    }
-    else {
-      return nullptr;
-    }
-  }
-
   void Game::awake() {
     for (auto s: this->systems) {
-      s->awake();
+      s.second->awake();
     }
   }
 
   void Game::update(float dt, float sec) {
     for (auto s: this->systems) {
-      s->update(dt, sec);
+      s.second->update(dt, sec);
     }
   }
 
   void Game::render(float dt, float sec) {
     for (auto s: this->systems) {
-      s->render(dt, sec);
+      s.second->render(dt, sec);
     }
   }
 
   void Game::freeze() {
     for (auto s: this->systems) {
-      s->freeze();
+      s.second->freeze();
     }
-  }
-
-  Game& Game::addSystem(lp::System *sys) {
-    this->systems.push_back(sys);
-    this->namedSystems[sys->type] = sys;
-
-    return *this;
   }
 
   void Game::run(int timestamp) {

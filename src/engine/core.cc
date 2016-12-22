@@ -8,32 +8,18 @@ namespace lp {
 
   using namespace oxygine;
 
-  std::string engine::version = "v0.0.1";
+  char* engine::version = version;
   Game* engine::game = nullptr;
   Game* engine::nextGame = nullptr;
   float engine::speed = 1.0f;
 
   // This function is called each idle frame
   int engine::animationLoop() {
-    // Update gfx
-    // If input events are available, they are passed to Stage::instance.handleEvent
-    // If the function returns true, it means that the user requested the application to terminate
+    // Handle input stuff
     bool done = core::update();
 
+    // Full update
     update(oxygine::getTimeMS());
-
-    // Update our stage
-    // Update all actors. Actor::update will also be called for all its children
-    getStage()->update();
-
-    if (core::beginRendering()) {
-      Color clearColor(32, 32, 32, 255);
-      Rect viewport(Point(0, 0), core::getDisplaySize());
-      // Render all actors inside the stage. Actor::render will also be called for all its children
-      getStage()->render(clearColor, viewport);
-
-      core::swapDisplayBuffers();
-    }
 
     return done ? 1 : 0;
   }
@@ -131,13 +117,37 @@ namespace lp {
       game->awake();
     }
 
-    if (game != nullptr) {
-      game->run(timestamp);
+    // Update stage and all its child actors
+    getStage()->update();
+
+    // Render things
+    if (core::beginRendering()) {
+      Color clearColor(32, 32, 32, 255);
+      Rect viewport(Point(0, 0), core::getDisplaySize());
+
+      if (game != nullptr) {
+        game->run(timestamp);
+      }
+
+      getStage()->render(clearColor, viewport);
+
+      core::swapDisplayBuffers();
     }
   }
 
   void engine::discard() {
     printf("discard\n");
+
+    // Destroy alive game instances
+    if (nextGame != nullptr) {
+      nextGame->freeze();
+      delete nextGame;
+    }
+
+    if (game != nullptr) {
+      game->freeze();
+      delete game;
+    }
   }
 
 }

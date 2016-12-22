@@ -2,18 +2,16 @@
 
 #include <vector>
 #include <string>
-#include <map>
+#include <unordered_map>
 
 #include "Entity.h"
 #include "System.h"
 
 namespace lp {
 
-  class Game {
+  class Game : public SystemManager {
     public:
       int desiredFPS = 60;
-
-      System* sys(const char* name);
 
       Game() {}
       virtual ~Game() {}
@@ -23,16 +21,11 @@ namespace lp {
       virtual void render(float dt, float sec);
       virtual void freeze();
 
-      Game& addSystem(System* sys);
-
       void run(int timestamp);
 
     protected:
-      std::vector<System*> systems;
-      std::map<std::string, System*> namedSystems;
-
       std::vector<Entity*> entities;
-      std::map<std::string, Entity*> namedEntities;
+      std::unordered_map<std::string, Entity*> namedEntities;
 
       struct UpdateInfo {
         int spiraling = 0;
