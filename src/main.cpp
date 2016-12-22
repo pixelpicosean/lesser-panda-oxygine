@@ -1,11 +1,9 @@
 #include "engine/core.h"
 
-#include "MyGame.h"
+#include "Loading.h"
 
 int main(int argc, const char* argv[]) {
-  lp::engine::main("LesserPanda", 640, 480, [] {
-    return new game::MyGame();
-  });
+  lp::engine::main("LesserPanda", 640, 480, MakeGameFactory(game::Loading));
 
   return 0;
 }

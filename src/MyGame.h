@@ -5,11 +5,11 @@
 #include "engine/Game.h"
 #include "engine/Entity.h"
 
+#include "global.h"
+
 using namespace oxygine;
 
 namespace game {
-
-  static Resources gameRes;
 
   class Button : public lp::Entity {
     public:
@@ -18,7 +18,8 @@ namespace game {
 
         // Components
         auto g = new Sprite();
-        g->setResAnim(gameRes.getResAnim("button"));
+        auto res = global::gameRes.getResAnim("button");
+        g->setResAnim(res);
         g->setAnchor(0.5f, 0.5f);
 
         g->addEventListener(TouchEvent::CLICK, [](Event * e)->void {
@@ -46,6 +47,7 @@ namespace game {
 
     private:
       Button *button = nullptr;
+      float timer = 0.0f;
   };
 
 }

@@ -5,6 +5,8 @@
 
 namespace lp {
 
+  uint64 Game::nextType = 0;
+
   Game::Game() {}
 
   Game::~Game() {

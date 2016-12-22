@@ -4,11 +4,14 @@
 #include <string>
 #include <unordered_map>
 
+#include "core.h"
 #include "Entity.h"
 #include "System.h"
 #include "Types.h"
 
 namespace lp {
+
+  #define MakeGameFactory(gameClass) []() { return new gameClass(); }
 
   class Game : public SystemManager {
     public:
@@ -56,6 +59,15 @@ namespace lp {
       UpdateInfo updateInfo;
 
       void onEntitySpawn(Entity* ent, const std::string& layer);
+
+    private:
+      friend class engine;
+
+      static uint64 nextType;
+      static uint64 type() {
+        static uint64 type = nextType++;
+        return type;
+      }
   };
 
 }

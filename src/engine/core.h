@@ -1,7 +1,6 @@
 #pragma once
 
 #include "oxygine-framework.h"
-#include "Game.h"
 
 #include <functional>
 
@@ -9,6 +8,7 @@ namespace lp {
 
   static const char* version = "v0.0.1";
 
+  class Game;
   class engine {
     public:
       static char* version;

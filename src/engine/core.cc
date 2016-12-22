@@ -1,8 +1,5 @@
 #include "core.h"
-
-#include "core/oxygine.h"
-#include "DebugActor.h"
-#include "Stage.h"
+#include "Game.h"
 
 namespace lp {
 
@@ -107,11 +104,15 @@ namespace lp {
 
   void engine::update(int timestamp) {
     if (nextGame) {
-      delete game;
-      game = nextGame;
-      nextGame = nullptr;
+      if (game) {
+        game->freeze();
+        delete game;
+      }
 
+      game = nextGame;
       game->awake();
+
+      nextGame = nullptr;
     }
 
     // Update stage and all its child actors
