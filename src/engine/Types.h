@@ -1,5 +1,6 @@
 #pragma once
 
+#include "oxygine-framework.h"
 #include <stdint.h>
 
 namespace lp {
@@ -22,5 +23,7 @@ namespace lp {
   static const int32_t InvalidIndex = -1;
   static const int32_t EndOfString = -1;
   static const int32_t EndOfFile = -1;
+
+  #define Ptr oxygine::intrusive_ptr
 
 } // namespace lp

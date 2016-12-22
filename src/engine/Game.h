@@ -6,16 +6,27 @@
 
 #include "Entity.h"
 #include "System.h"
+#include "Types.h"
 
 namespace lp {
 
-  DECLARE_SMART(Game, GamePtr);
   class Game : public SystemManager {
     public:
       int desiredFPS = 60;
 
       Game() {}
       virtual ~Game() {}
+
+      template <typename T>
+      T* spawnEntity(float x, float y) {
+        T* ent = new T(x, y);
+        this->onEntitySpawn(ent);
+        return ent;
+      }
+      Entity* spawnEntity(const std::string& type, float x, float y);
+
+      void removeEntity(Entity* ent);
+      void removeEntity(int64 entID);
 
       virtual void awake();
       virtual void update(float dt, float sec);
@@ -25,7 +36,7 @@ namespace lp {
       void run(int timestamp);
 
     protected:
-      std::vector<Entity*> entities;
+      std::unordered_map<int64, Entity*> entities;
       std::unordered_map<std::string, Entity*> namedEntities;
 
       struct UpdateInfo {
@@ -41,6 +52,8 @@ namespace lp {
       };
 
       UpdateInfo updateInfo;
+
+      void onEntitySpawn(Entity* ent);
   };
 
 }

@@ -5,6 +5,42 @@
 
 namespace lp {
 
+  Entity* Game::spawnEntity(const std::string &type, float x, float y) {
+    auto p = Entity::entityTypes.find(type);
+    if (p != Entity::entityTypes.end()) {
+      auto ent = p->second(x, y);
+
+      this->onEntitySpawn(ent);
+
+      return ent;
+    }
+
+    // TODO: assertion
+    return nullptr;
+  }
+
+  void Game::removeEntity(Entity* ent) {
+    // Mark as removed
+    ent->isRemoved = true;
+
+    // Remove from name list
+    if (ent->name.size() > 0) {
+      this->namedEntities.erase(ent->name);
+    }
+
+    // Notify systems
+    for (auto s: this->systems) {
+      s.second->onEntityRemove(ent);
+    }
+  }
+
+  void Game::removeEntity(int64 entID) {
+    auto p = this->entities.find(entID);
+    if (p != this->entities.end()) {
+      this->removeEntity(p->second);
+    }
+  }
+
   void Game::awake() {
     for (auto s: this->systems) {
       s.second->awake();
@@ -77,6 +113,24 @@ namespace lp {
 
     // Idle update
     this->render(updateInfo.realDelta, updateInfo.realDelta * 0.001f);
+  }
+
+  void Game::onEntitySpawn(lp::Entity *ent) {
+    ent->game = this;
+
+    // Add to list
+    this->entities.insert(std::make_pair(ent->id, ent));
+
+    // Add to name list if name exist
+    this->namedEntities.insert(std::make_pair(ent->name, ent));
+
+    // Notify systems
+    for (auto s: this->systems) {
+      s.second->onEntitySpawn(ent);
+    }
+
+    // Entity is ready to rock :D
+    ent->ready();
   }
 
 }
