@@ -9,26 +9,19 @@ namespace lp {
   static const char* version = "v0.0.1";
 
   class Game;
-  class engine {
-    public:
-      static char* version;
 
-      static Game* game;
-      static float speed;
+  typedef std::function<Game*()> GameFactory;
 
-      typedef std::function<Game*()> GameFactory;
+  struct engine {
+    static Game* game;
+    static float speed;
 
-      static void main(const char* title, int width, int height, GameFactory factory);
-      static void setGame(GameFactory factory);
+    static void setGame(GameFactory factory);
 
-    private:
-      static Game* nextGame;
+    static void update(int timestamp);
+    static void discard();
 
-      static void init(GameFactory factory);
-      static void update(int timestamp);
-      static void discard();
-
-      static int animationLoop();
+    static Game* nextGame;
   };
 
 }

@@ -2,8 +2,8 @@
 
 #include "oxygine-framework.h"
 
-#include "engine/Game.h"
-#include "engine/Entity.h"
+#include "../engine/Game.h"
+#include "../engine/Entity.h"
 
 #include "global.h"
 

@@ -1,6 +1,6 @@
 #pragma once
 
-#include "engine/Game.h"
+#include "../engine/Game.h"
 
 #include "global.h"
 #include "MyGame.h"
