@@ -9,25 +9,26 @@ link_directories(${OXYGINE_LIBRARY_DIRS})
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${OXYGINE_CXX_FLAGS}")
 
 add_executable(HelloMac
-  ../src/main.cc
-  ../src/engine/core.cc
-  ../src/engine/core.h
-  ../src/engine/Entity.cc
-  ../src/engine/Entity.h
-  ../src/engine/Game.cc
-  ../src/engine/Game.h
-  ../src/engine/Gfx.cc
-  ../src/engine/Gfx.h
-  ../src/engine/NonCopyable.h
-  ../src/engine/System.cc
-  ../src/engine/System.h
-  ../src/engine/Types.h
-  ../src/global.cc
-  ../src/global.h
-  ../src/Loading.cc
-  ../src/Loading.h
-  ../src/MyGame.cc
-  ../src/MyGame.h
+  ../src/main.cpp
+  ../src/entry.hpp
+  ../src/engine/core.cpp
+  ../src/engine/core.hpp
+  ../src/engine/Entity.cpp
+  ../src/engine/Entity.hpp
+  ../src/engine/Game.cpp
+  ../src/engine/Game.hpp
+  ../src/engine/Gfx.cpp
+  ../src/engine/Gfx.hpp
+  ../src/engine/NonCopyable.hpp
+  ../src/engine/System.cpp
+  ../src/engine/System.hpp
+  ../src/engine/Types.hpp
+  ../src/game/global.cpp
+  ../src/game/global.hpp
+  ../src/game/Loading.cpp
+  ../src/game/Loading.hpp
+  ../src/game/MyGame.cpp
+  ../src/game/MyGame.hpp
 )
 target_link_libraries(HelloMac ${OXYGINE_CORE_LIBS})
 
