@@ -2,49 +2,36 @@
 
 #include "engine/Gfx.h"
 
-Resources gameRes;
+namespace game {
 
-MyGame::MyGame() {
-  this->desiredFPS = 60;
+  MyGame::MyGame() {
+    this->desiredFPS = 60;
 
-  this->addSystem<lp::Gfx>();
+    this->addSystem<lp::Gfx>();
 
-  // load resources
-  gameRes.loadXML("res.xml");
+    // load resources
+    gameRes.loadXML("res.xml");
 
-  // create button Sprite
-  button = new Sprite();
+    // create button Sprite
+    this->button = this->spawnEntity<Button>(getStage()->getWidth() / 2, getStage()->getHeight() / 2);
+  }
 
-  // setup the button
-  button->setResAnim(gameRes.getResAnim("button"));
-  button->setAnchor(0.5f, 0.5f);
-  button->setPosition(getStage()->getSize() / 2);
+  MyGame::~MyGame() {}
 
-  button->addEventListener(TouchEvent::CLICK, [](Event * e)->void {
-    log::messageln("button clicked");
-  });
+  void MyGame::awake() {
+    lp::Game::awake();
 
-  // attach button as child to the root
-  auto s = this->system<lp::Gfx>();
-  s->root->addChild(button);
-}
+    log::message("Awake\n");
+  }
 
-MyGame::~MyGame() {}
+  void MyGame::update(float dt, float sec) {
+    lp::Game::update(dt, sec);
+  }
 
-void MyGame::awake() {
-  lp::Game::awake();
+  void MyGame::freeze() {
+    lp::Game::freeze();
 
-  printf("Awake\n");
-}
+    log::message("Freeze\n");
+  }
 
-void MyGame::update(float dt, float sec) {
-  lp::Game::update(dt, sec);
-
-  this->button->setRotationDegrees(this->button->getRotationDegrees() + sec * 90);
-}
-
-void MyGame::freeze() {
-  lp::Game::freeze();
-
-  printf("Freeze\n");
 }

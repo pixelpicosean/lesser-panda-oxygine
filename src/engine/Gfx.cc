@@ -38,11 +38,22 @@ namespace lp {
   }
 
   void Gfx::onEntitySpawn(lp::Entity *ent) {
-
+    auto layer = (ent->layer.size() > 0) ? ent->layer : "root";
+    if (ent->gfx) {
+      auto p = this->layers.find(layer);
+      if (p != this->layers.end()) {
+        p->second->addChild(ent->gfx);
+      }
+      else {
+        // TODO: assert layer not found
+      }
+    }
   }
 
   void Gfx::onEntityRemove(lp::Entity *ent) {
-    
+    if (ent->gfx) {
+      ent->gfx->detach();
+    }
   }
 
 }

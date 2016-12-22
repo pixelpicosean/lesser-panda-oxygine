@@ -1,4 +1,5 @@
 #include "Entity.h"
+#include "Game.h"
 
 #include <utility>
 
@@ -14,6 +15,24 @@ namespace lp {
     }
   }
 
-  Entity::Entity(float x, float y): id(nextId++) {}
+  Entity::Entity(float x, float y): id(nextId++), position(x, y) {}
+
+  Entity::~Entity() {
+    if (this->gfx) {
+      this->gfx = nullptr;
+    }
+  }
+
+  void Entity::ready() {
+    if (this->gfx) {
+      this->gfx->setPosition(this->position);
+    }
+  }
+
+  void Entity::remove() {
+    if (this->game) {
+      this->game->removeEntity(this);
+    }
+  }
 
 }

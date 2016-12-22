@@ -102,8 +102,6 @@ namespace lp {
   }
 
   void engine::init(GameFactory factory) {
-    printf("init\n");
-
     nextGame = factory();
   }
 
@@ -135,8 +133,6 @@ namespace lp {
   }
 
   void engine::discard() {
-    printf("discard\n");
-
     // Destroy alive game instances
     if (nextGame) {
       nextGame->freeze();

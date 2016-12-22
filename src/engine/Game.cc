@@ -5,12 +5,25 @@
 
 namespace lp {
 
-  Entity* Game::spawnEntity(const std::string &type, float x, float y) {
+  Game::Game() {}
+
+  Game::~Game() {
+    // Remove entities
+    for (auto e: this->entities) {
+      e.second->remove();
+      delete e.second;
+    }
+    this->entities.clear();
+
+    this->namedEntities.clear();
+  }
+
+  Entity* Game::spawnEntity(const std::string &type, float x, float y, const std::string& layer) {
     auto p = Entity::entityTypes.find(type);
     if (p != Entity::entityTypes.end()) {
       auto ent = p->second(x, y);
 
-      this->onEntitySpawn(ent);
+      this->onEntitySpawn(ent, layer);
 
       return ent;
     }
@@ -41,6 +54,15 @@ namespace lp {
     }
   }
 
+  Entity* Game::getEntityByName(const std::string &name) {
+    auto p = this->namedEntities.find(name);
+    if (p != this->namedEntities.end()) {
+      return p->second;
+    }
+
+    return nullptr;
+  }
+
   void Game::awake() {
     for (auto s: this->systems) {
       s.second->awake();
@@ -48,12 +70,44 @@ namespace lp {
   }
 
   void Game::update(float dt, float sec) {
+    for (auto i = this->entities.begin(); i != this->entities.end();) {
+      auto ent = i->second;
+      if (!ent->isRemoved && ent->canEverTick) {
+        ent->update(dt, sec);
+      }
+
+      if (ent->isRemoved) {
+        this->entities.erase(i);
+        // TODO: recycle
+        delete ent;
+      }
+      else {
+        ++i;
+      }
+    }
+
     for (auto s: this->systems) {
       s.second->update(dt, sec);
     }
   }
 
   void Game::render(float dt, float sec) {
+    for (auto i = this->entities.begin(); i != this->entities.end();) {
+      auto ent = i->second;
+      if (!ent->isRemoved && ent->canEverTick) {
+        ent->render(dt, sec);
+      }
+
+      if (ent->isRemoved) {
+        this->entities.erase(i);
+        // TODO: recycle
+        delete ent;
+      }
+      else {
+        ++i;
+      }
+    }
+
     for (auto s: this->systems) {
       s.second->render(dt, sec);
     }
@@ -115,7 +169,8 @@ namespace lp {
     this->render(updateInfo.realDelta, updateInfo.realDelta * 0.001f);
   }
 
-  void Game::onEntitySpawn(lp::Entity *ent) {
+  void Game::onEntitySpawn(lp::Entity *ent, const std::string& layer) {
+    ent->layer = layer;
     ent->game = this;
 
     // Add to list

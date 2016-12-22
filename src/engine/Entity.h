@@ -26,13 +26,28 @@ namespace lp {
       oxygine::spActor gfx = nullptr;
       std::string layer = "root";
 
-      oxygine::Vector2 position;
-
       static void define(const std::string& type, const Factory& factory);
 
       Entity(float x, float y);
+      virtual ~Entity();
 
-      void ready() {}
+      void setPosition(float x, float y) {
+        this->position.set(x, y);
+        if (this->gfx) {
+          this->gfx->setPosition(this->position);
+        }
+      }
+      oxygine::Vector2 getPosition(float x, float y) {
+        return this->position;
+      }
+
+      virtual void ready();
+      virtual void update(float dt, float sec) {}
+      virtual void render(float dt, float sec) {}
+      virtual void remove();
+
+    protected:
+      oxygine::Vector2 position = { 0.0f, 0.0f };
 
     private:
       static int64 nextId;

@@ -14,19 +14,21 @@ namespace lp {
     public:
       int desiredFPS = 60;
 
-      Game() {}
-      virtual ~Game() {}
+      Game();
+      virtual ~Game();
 
       template <typename T>
-      T* spawnEntity(float x, float y) {
+      T* spawnEntity(float x, float y, const std::string& layer = "root") {
         T* ent = new T(x, y);
-        this->onEntitySpawn(ent);
+        this->onEntitySpawn(ent, layer);
         return ent;
       }
-      Entity* spawnEntity(const std::string& type, float x, float y);
+      Entity* spawnEntity(const std::string& type, float x, float y, const std::string& layer = "root");
 
       void removeEntity(Entity* ent);
       void removeEntity(int64 entID);
+
+      Entity* getEntityByName(const std::string& name);
 
       virtual void awake();
       virtual void update(float dt, float sec);
@@ -53,7 +55,7 @@ namespace lp {
 
       UpdateInfo updateInfo;
 
-      void onEntitySpawn(Entity* ent);
+      void onEntitySpawn(Entity* ent, const std::string& layer);
   };
 
 }
