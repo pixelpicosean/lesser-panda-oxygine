@@ -9,6 +9,7 @@
 
 namespace lp {
 
+  DECLARE_SMART(Game, GamePtr);
   class Game : public SystemManager {
     public:
       int desiredFPS = 60;

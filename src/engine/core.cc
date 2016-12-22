@@ -108,12 +108,11 @@ namespace lp {
   }
 
   void engine::update(int timestamp) {
-    if (nextGame != nullptr) {
-      auto inst = nextGame;
-
+    if (nextGame) {
+      delete game;
+      game = nextGame;
       nextGame = nullptr;
 
-      game = inst;
       game->awake();
     }
 
@@ -125,7 +124,7 @@ namespace lp {
       Color clearColor(32, 32, 32, 255);
       Rect viewport(Point(0, 0), core::getDisplaySize());
 
-      if (game != nullptr) {
+      if (game) {
         game->run(timestamp);
       }
 
@@ -139,14 +138,16 @@ namespace lp {
     printf("discard\n");
 
     // Destroy alive game instances
-    if (nextGame != nullptr) {
+    if (nextGame) {
       nextGame->freeze();
       delete nextGame;
+      nextGame = nullptr;
     }
 
-    if (game != nullptr) {
+    if (game) {
       game->freeze();
       delete game;
+      game = nullptr;
     }
   }
 

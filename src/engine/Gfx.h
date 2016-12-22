@@ -13,41 +13,16 @@ namespace lp {
 
       std::unordered_map<std::string, oxygine::spActor> layers;
 
-      Gfx() {
-        this->root = this->layers["root"] = new oxygine::Actor();
-      }
-      ~Gfx() {
-        this->root = nullptr;
+      Gfx();
+      ~Gfx();
 
-        for (auto i : this->layers) {
-          i.second = nullptr;
-        }
-        this->layers.clear();
-      }
+      Gfx& createLayer(std::string name, std::string parent = "root");
 
-      Gfx& createLayer(std::string name, std::string parent = "root") {
-        if (this->layers.find(name) == this->layers.end()) {
-          auto layer = new oxygine::Actor();
-          this->layers[name] = layer;
+      void awake() override;
+      void freeze() override;
 
-          auto p = this->layers[parent];
-          if (p) {
-            p->addChild(layer);
-          }
-        }
-
-        return *this;
-      }
-
-      void awake() override {
-        oxygine::getStage()->addChild(this->root);
-      }
-      void freeze() override {
-        oxygine::getStage()->removeChild(this->root);
-      }
-
-      void onEntitySpawn(Entity* ent) override {}
-      void onEntityRemove(Entity* ent) override {}
+      void onEntitySpawn(Entity* ent) override;
+      void onEntityRemove(Entity* ent) override;
   };
 
 }
