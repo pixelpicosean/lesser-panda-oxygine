@@ -1,9 +1,9 @@
 #pragma once
 
-#include "../engine/Game.h"
+#include "../engine/Game.hpp"
 
-#include "global.h"
-#include "MyGame.h"
+#include "global.hpp"
+#include "MyGame.hpp"
 
 namespace game {
 

@@ -2,10 +2,10 @@
 
 #include "oxygine-framework.h"
 
-#include "../engine/Game.h"
-#include "../engine/Entity.h"
+#include "../engine/Game.hpp"
+#include "../engine/Entity.hpp"
 
-#include "global.h"
+#include "global.hpp"
 
 using namespace oxygine;
 

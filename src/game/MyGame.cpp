@@ -1,6 +1,6 @@
-#include "MyGame.h"
+#include "MyGame.hpp"
 
-#include "../engine/Gfx.h"
+#include "../engine/Gfx.hpp"
 
 namespace game {
 

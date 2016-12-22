@@ -1,5 +1,5 @@
-#include "Game.h"
-#include "core.h"
+#include "Game.hpp"
+#include "core.hpp"
 
 #include <cmath>
 

@@ -1,5 +1,5 @@
-#include "core.h"
-#include "Game.h"
+#include "core.hpp"
+#include "Game.hpp"
 
 namespace lp {
 

@@ -1,6 +1,7 @@
 #pragma once
 
 #include "oxygine-framework.h"
+
 #include <stdint.h>
 
 namespace lp {

@@ -1,4 +1,4 @@
-#include "Gfx.h"
+#include "Gfx.hpp"
 
 namespace lp {
 

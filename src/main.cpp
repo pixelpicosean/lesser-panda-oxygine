@@ -1,10 +1,7 @@
-#include "core/oxygine.h"
+#include "oxygine-framework.h"
 
-#include "Stage.h"
-#include "DebugActor.h"
-
+#include "engine/core.hpp"
 #include "entry.hpp"
-#include "engine/core.h"
 
 
 using namespace oxygine;

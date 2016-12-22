@@ -3,9 +3,10 @@
 #include <string>
 
 #include "oxygine-framework.h"
-#include "engine/core.h"
 
-#include "game/Loading.h"
+#include "engine/core.hpp"
+
+#include "game/Loading.hpp"
 
 namespace game {
 

@@ -1,7 +1,8 @@
 #pragma once
 
-#include "System.h"
 #include "oxygine-framework.h"
+
+#include "System.hpp"
 
 #include <unordered_map>
 

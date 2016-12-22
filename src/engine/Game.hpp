@@ -1,13 +1,13 @@
 #pragma once
 
+#include "core.hpp"
+#include "Entity.hpp"
+#include "System.hpp"
+#include "Types.hpp"
+
 #include <vector>
 #include <string>
 #include <unordered_map>
-
-#include "core.h"
-#include "Entity.h"
-#include "System.h"
-#include "Types.h"
 
 namespace lp {
 

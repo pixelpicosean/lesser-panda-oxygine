@@ -1,12 +1,12 @@
 #pragma once
 
+#include "Types.hpp"
+#include "NonCopyable.hpp"
+#include "Entity.hpp"
+
 #include <cassert>
 #include <utility>
 #include <unordered_map>
-
-#include "Types.h"
-#include "NonCopyable.h"
-#include "Entity.h"
 
 namespace lp {
 
