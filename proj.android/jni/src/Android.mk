@@ -7,15 +7,15 @@ LOCAL_MODULE := main
 LOCAL_SRC_FILES := ../../../../../../ccApps/oxygine/SDL/src/main/android/SDL_android_main.c
 
 LOCAL_SRC_FILES += \
-	../../../src/engine/core.cc \
-	../../../src/engine/Entity.cc \
-	../../../src/engine/Game.cc \
-	../../../src/engine/Gfx.cc \
-	../../../src/engine/System.cc \
-	../../../src/global.cc \
-	../../../src/Loading.cc \
-	../../../src/MyGame.cc \
-	../../../src/main.cc
+	../../../src/engine/core.cpp \
+	../../../src/engine/Entity.cpp \
+	../../../src/engine/Game.cpp \
+	../../../src/engine/Gfx.cpp \
+	../../../src/engine/System.cpp \
+	../../../src/game/global.cpp \
+	../../../src/game/Loading.cpp \
+	../../../src/game/MyGame.cpp \
+	../../../src/main.cpp
 
 
 LOCAL_STATIC_LIBRARIES := oxygine-framework_static
