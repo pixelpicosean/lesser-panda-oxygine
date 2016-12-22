@@ -15,18 +15,18 @@
 		0405A00118720D2200BA6557 /* libpng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04059FF11872031A00BA6557 /* libpng.a */; };
 		049B57321871FBE900EF3C66 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049B57311871FBE900EF3C66 /* Cocoa.framework */; };
 		049B574A1871FBE900EF3C66 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049B57491871FBE900EF3C66 /* Images.xcassets */; };
-		147E0ECB1E0A7A6700FC4254 /* core.cc in Sources */ = {isa = PBXBuildFile; fileRef = 147E0EC91E0A7A6700FC4254 /* core.cc */; };
-		147E0EDA1E0A827700FC4254 /* Game.cc in Sources */ = {isa = PBXBuildFile; fileRef = 147E0ED81E0A827700FC4254 /* Game.cc */; };
-		147E0EDD1E0A833700FC4254 /* System.cc in Sources */ = {isa = PBXBuildFile; fileRef = 147E0EDB1E0A833700FC4254 /* System.cc */; };
-		147E0EE01E0A83C700FC4254 /* Entity.cc in Sources */ = {isa = PBXBuildFile; fileRef = 147E0EDE1E0A83C700FC4254 /* Entity.cc */; };
-		147E0EE41E0ABF0100FC4254 /* MyGame.cc in Sources */ = {isa = PBXBuildFile; fileRef = 147E0EE21E0ABF0100FC4254 /* MyGame.cc */; };
-		147E0EE71E0B731D00FC4254 /* Gfx.cc in Sources */ = {isa = PBXBuildFile; fileRef = 147E0EE61E0B731D00FC4254 /* Gfx.cc */; };
-		147E0EED1E0BB2E800FC4254 /* Loading.cc in Sources */ = {isa = PBXBuildFile; fileRef = 147E0EEB1E0BB2E800FC4254 /* Loading.cc */; };
-		147E0EF01E0BBB0300FC4254 /* global.cc in Sources */ = {isa = PBXBuildFile; fileRef = 147E0EEF1E0BBB0300FC4254 /* global.cc */; };
+		147E0F3F1E0C009600FC4254 /* core.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 147E0F331E0C009600FC4254 /* core.cpp */; };
+		147E0F401E0C009600FC4254 /* Entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 147E0F351E0C009600FC4254 /* Entity.cpp */; };
+		147E0F411E0C009600FC4254 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 147E0F371E0C009600FC4254 /* Game.cpp */; };
+		147E0F421E0C009600FC4254 /* Gfx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 147E0F391E0C009600FC4254 /* Gfx.cpp */; };
+		147E0F431E0C009600FC4254 /* System.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 147E0F3C1E0C009600FC4254 /* System.cpp */; };
+		147E0F4A1E0C009F00FC4254 /* global.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 147E0F441E0C009F00FC4254 /* global.cpp */; };
+		147E0F4B1E0C009F00FC4254 /* Loading.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 147E0F461E0C009F00FC4254 /* Loading.cpp */; };
+		147E0F4C1E0C009F00FC4254 /* MyGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 147E0F481E0C009F00FC4254 /* MyGame.cpp */; };
+		147E0F4F1E0C00AA00FC4254 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 147E0F4E1E0C00AA00FC4254 /* main.cpp */; };
 		1E839D002B2BA83FC83A695A /* images in Resources */ = {isa = PBXBuildFile; fileRef = 04FE4D4FB640E0DF92DFB865 /* images */; };
 		3A631A475DE035FC53ADE5EA /* res.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7F3B12E3C9D554D9FE28101D /* res.xml */; };
 		C8860D93875589970329DCCD /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 4DA100C319512824B7570663 /* fonts */; };
-		DA49ED8903C628BA578C8670 /* main.cc in Sources */ = {isa = PBXBuildFile; fileRef = 0BF9628FC8D38F9748F0CDEB /* main.cc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,25 +99,26 @@
 		04A57D761871FFEB0068B1E5 /* oxygine_macosx.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = oxygine_macosx.xcodeproj; path = "../../../../ccApps/oxygine/oxygine-framework//oxygine/SDL/macosx/oxygine_macosx/oxygine_macosx.xcodeproj"; sourceTree = "<group>"; };
 		04A57D7E1872012A0068B1E5 /* SDL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL.xcodeproj; path = "../../../../ccApps/oxygine//SDL/Xcode/SDL/SDL.xcodeproj"; sourceTree = "<group>"; };
 		04FE4D4FB640E0DF92DFB865 /* images */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; name = images; path = ../data/images; sourceTree = "<group>"; };
-		0BF9628FC8D38F9748F0CDEB /* main.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cc; path = ../src/main.cc; sourceTree = "<group>"; };
-		147E0EC91E0A7A6700FC4254 /* core.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = core.cc; path = ../src/engine/core.cc; sourceTree = "<group>"; };
-		147E0ECA1E0A7A6700FC4254 /* core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = core.h; path = ../src/engine/core.h; sourceTree = "<group>"; };
-		147E0ED01E0A7BAC00FC4254 /* Types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Types.h; path = ../src/engine/Types.h; sourceTree = "<group>"; };
-		147E0ED81E0A827700FC4254 /* Game.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Game.cc; path = ../src/engine/Game.cc; sourceTree = "<group>"; };
-		147E0ED91E0A827700FC4254 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Game.h; path = ../src/engine/Game.h; sourceTree = "<group>"; };
-		147E0EDB1E0A833700FC4254 /* System.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = System.cc; path = ../src/engine/System.cc; sourceTree = "<group>"; };
-		147E0EDC1E0A833700FC4254 /* System.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = System.h; path = ../src/engine/System.h; sourceTree = "<group>"; };
-		147E0EDE1E0A83C700FC4254 /* Entity.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Entity.cc; path = ../src/engine/Entity.cc; sourceTree = "<group>"; };
-		147E0EDF1E0A83C700FC4254 /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Entity.h; path = ../src/engine/Entity.h; sourceTree = "<group>"; };
-		147E0EE11E0ABAD500FC4254 /* Gfx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Gfx.h; path = ../src/engine/Gfx.h; sourceTree = "<group>"; };
-		147E0EE21E0ABF0100FC4254 /* MyGame.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MyGame.cc; path = ../src/MyGame.cc; sourceTree = "<group>"; };
-		147E0EE31E0ABF0100FC4254 /* MyGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyGame.h; path = ../src/MyGame.h; sourceTree = "<group>"; };
-		147E0EE51E0B59EB00FC4254 /* NonCopyable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NonCopyable.h; path = ../src/engine/NonCopyable.h; sourceTree = "<group>"; };
-		147E0EE61E0B731D00FC4254 /* Gfx.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Gfx.cc; path = ../src/engine/Gfx.cc; sourceTree = "<group>"; };
-		147E0EEB1E0BB2E800FC4254 /* Loading.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Loading.cc; path = ../src/Loading.cc; sourceTree = "<group>"; };
-		147E0EEC1E0BB2E800FC4254 /* Loading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Loading.h; path = ../src/Loading.h; sourceTree = "<group>"; };
-		147E0EEE1E0BB33D00FC4254 /* global.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = global.h; path = ../src/global.h; sourceTree = "<group>"; };
-		147E0EEF1E0BBB0300FC4254 /* global.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = global.cc; path = ../src/global.cc; sourceTree = "<group>"; };
+		147E0F331E0C009600FC4254 /* core.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = core.cpp; path = ../src/engine/core.cpp; sourceTree = "<group>"; };
+		147E0F341E0C009600FC4254 /* core.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = core.hpp; path = ../src/engine/core.hpp; sourceTree = "<group>"; };
+		147E0F351E0C009600FC4254 /* Entity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Entity.cpp; path = ../src/engine/Entity.cpp; sourceTree = "<group>"; };
+		147E0F361E0C009600FC4254 /* Entity.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Entity.hpp; path = ../src/engine/Entity.hpp; sourceTree = "<group>"; };
+		147E0F371E0C009600FC4254 /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Game.cpp; path = ../src/engine/Game.cpp; sourceTree = "<group>"; };
+		147E0F381E0C009600FC4254 /* Game.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Game.hpp; path = ../src/engine/Game.hpp; sourceTree = "<group>"; };
+		147E0F391E0C009600FC4254 /* Gfx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Gfx.cpp; path = ../src/engine/Gfx.cpp; sourceTree = "<group>"; };
+		147E0F3A1E0C009600FC4254 /* Gfx.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Gfx.hpp; path = ../src/engine/Gfx.hpp; sourceTree = "<group>"; };
+		147E0F3B1E0C009600FC4254 /* NonCopyable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = NonCopyable.hpp; path = ../src/engine/NonCopyable.hpp; sourceTree = "<group>"; };
+		147E0F3C1E0C009600FC4254 /* System.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = System.cpp; path = ../src/engine/System.cpp; sourceTree = "<group>"; };
+		147E0F3D1E0C009600FC4254 /* System.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = System.hpp; path = ../src/engine/System.hpp; sourceTree = "<group>"; };
+		147E0F3E1E0C009600FC4254 /* Types.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Types.hpp; path = ../src/engine/Types.hpp; sourceTree = "<group>"; };
+		147E0F441E0C009F00FC4254 /* global.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = global.cpp; path = ../src/game/global.cpp; sourceTree = "<group>"; };
+		147E0F451E0C009F00FC4254 /* global.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = global.hpp; path = ../src/game/global.hpp; sourceTree = "<group>"; };
+		147E0F461E0C009F00FC4254 /* Loading.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Loading.cpp; path = ../src/game/Loading.cpp; sourceTree = "<group>"; };
+		147E0F471E0C009F00FC4254 /* Loading.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Loading.hpp; path = ../src/game/Loading.hpp; sourceTree = "<group>"; };
+		147E0F481E0C009F00FC4254 /* MyGame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MyGame.cpp; path = ../src/game/MyGame.cpp; sourceTree = "<group>"; };
+		147E0F491E0C009F00FC4254 /* MyGame.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = MyGame.hpp; path = ../src/game/MyGame.hpp; sourceTree = "<group>"; };
+		147E0F4D1E0C00AA00FC4254 /* entry.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = entry.hpp; path = ../src/entry.hpp; sourceTree = "<group>"; };
+		147E0F4E1E0C00AA00FC4254 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../src/main.cpp; sourceTree = "<group>"; };
 		4DA100C319512824B7570663 /* fonts */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; name = fonts; path = ../data/fonts; sourceTree = "<group>"; };
 		7F3B12E3C9D554D9FE28101D /* res.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wtf; name = res.xml; path = ../data/res.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -209,14 +210,10 @@
 		04A57D391871FF8B0068B1E5 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				147E0F4D1E0C00AA00FC4254 /* entry.hpp */,
+				147E0F4E1E0C00AA00FC4254 /* main.cpp */,
 				147E0ECF1E0A7B6400FC4254 /* engine */,
-				0BF9628FC8D38F9748F0CDEB /* main.cc */,
-				147E0EE21E0ABF0100FC4254 /* MyGame.cc */,
-				147E0EE31E0ABF0100FC4254 /* MyGame.h */,
-				147E0EEB1E0BB2E800FC4254 /* Loading.cc */,
-				147E0EEC1E0BB2E800FC4254 /* Loading.h */,
-				147E0EEF1E0BBB0300FC4254 /* global.cc */,
-				147E0EEE1E0BB33D00FC4254 /* global.h */,
+				147E0F321E0C007D00FC4254 /* game */,
 			);
 			name = src;
 			sourceTree = "<group>";
@@ -235,20 +232,33 @@
 		147E0ECF1E0A7B6400FC4254 /* engine */ = {
 			isa = PBXGroup;
 			children = (
-				147E0EE51E0B59EB00FC4254 /* NonCopyable.h */,
-				147E0ED01E0A7BAC00FC4254 /* Types.h */,
-				147E0EC91E0A7A6700FC4254 /* core.cc */,
-				147E0ECA1E0A7A6700FC4254 /* core.h */,
-				147E0ED81E0A827700FC4254 /* Game.cc */,
-				147E0ED91E0A827700FC4254 /* Game.h */,
-				147E0EDB1E0A833700FC4254 /* System.cc */,
-				147E0EDC1E0A833700FC4254 /* System.h */,
-				147E0EDE1E0A83C700FC4254 /* Entity.cc */,
-				147E0EDF1E0A83C700FC4254 /* Entity.h */,
-				147E0EE61E0B731D00FC4254 /* Gfx.cc */,
-				147E0EE11E0ABAD500FC4254 /* Gfx.h */,
+				147E0F331E0C009600FC4254 /* core.cpp */,
+				147E0F341E0C009600FC4254 /* core.hpp */,
+				147E0F351E0C009600FC4254 /* Entity.cpp */,
+				147E0F361E0C009600FC4254 /* Entity.hpp */,
+				147E0F371E0C009600FC4254 /* Game.cpp */,
+				147E0F381E0C009600FC4254 /* Game.hpp */,
+				147E0F391E0C009600FC4254 /* Gfx.cpp */,
+				147E0F3A1E0C009600FC4254 /* Gfx.hpp */,
+				147E0F3B1E0C009600FC4254 /* NonCopyable.hpp */,
+				147E0F3C1E0C009600FC4254 /* System.cpp */,
+				147E0F3D1E0C009600FC4254 /* System.hpp */,
+				147E0F3E1E0C009600FC4254 /* Types.hpp */,
 			);
 			name = engine;
+			sourceTree = "<group>";
+		};
+		147E0F321E0C007D00FC4254 /* game */ = {
+			isa = PBXGroup;
+			children = (
+				147E0F441E0C009F00FC4254 /* global.cpp */,
+				147E0F451E0C009F00FC4254 /* global.hpp */,
+				147E0F461E0C009F00FC4254 /* Loading.cpp */,
+				147E0F471E0C009F00FC4254 /* Loading.hpp */,
+				147E0F481E0C009F00FC4254 /* MyGame.cpp */,
+				147E0F491E0C009F00FC4254 /* MyGame.hpp */,
+			);
+			name = game;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -367,15 +377,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				147E0EDD1E0A833700FC4254 /* System.cc in Sources */,
-				DA49ED8903C628BA578C8670 /* main.cc in Sources */,
-				147E0EED1E0BB2E800FC4254 /* Loading.cc in Sources */,
-				147E0ECB1E0A7A6700FC4254 /* core.cc in Sources */,
-				147E0EE71E0B731D00FC4254 /* Gfx.cc in Sources */,
-				147E0EF01E0BBB0300FC4254 /* global.cc in Sources */,
-				147E0EE01E0A83C700FC4254 /* Entity.cc in Sources */,
-				147E0EDA1E0A827700FC4254 /* Game.cc in Sources */,
-				147E0EE41E0ABF0100FC4254 /* MyGame.cc in Sources */,
+				147E0F431E0C009600FC4254 /* System.cpp in Sources */,
+				147E0F411E0C009600FC4254 /* Game.cpp in Sources */,
+				147E0F4F1E0C00AA00FC4254 /* main.cpp in Sources */,
+				147E0F4A1E0C009F00FC4254 /* global.cpp in Sources */,
+				147E0F4C1E0C009F00FC4254 /* MyGame.cpp in Sources */,
+				147E0F421E0C009600FC4254 /* Gfx.cpp in Sources */,
+				147E0F4B1E0C009F00FC4254 /* Loading.cpp in Sources */,
+				147E0F401E0C009600FC4254 /* Entity.cpp in Sources */,
+				147E0F3F1E0C009600FC4254 /* core.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
