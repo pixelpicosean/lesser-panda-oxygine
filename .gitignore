@@ -8,3 +8,5 @@
 /proj.ios/HelloMac_ios.xcodeproj/project.xcworkspace/xcuserdata
 /proj.ios/HelloMac_ios.xcodeproj/xcuserdata
 /proj.android/libs
+/proj.cmake/build_emsc_release
+/proj.cmake/data.js
