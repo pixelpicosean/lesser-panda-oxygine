@@ -140,7 +140,7 @@ namespace lp {
       updateInfo.slowStepSec = updateInfo.slowStep * 0.001f;
 
       // Accumulate time until the step threshold is met or exceeded... up to a limit of 3 catch-up frames at step intervals
-      updateInfo.deltaTime += std::fmax(std::fmin(updateInfo.step * 3.0f, updateInfo.realDelta), 0.0f);
+      updateInfo.deltaTime += fmax(fmin(updateInfo.step * 3.0f, float(updateInfo.realDelta)), 0.0f);
 
       // Call the game update logic multiple times if necessary to "catch up" with dropped frames
       // unless forceSingleUpdate is true

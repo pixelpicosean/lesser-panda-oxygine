@@ -26,7 +26,7 @@
 		1E839D002B2BA83FC83A695A /* images in Resources */ = {isa = PBXBuildFile; fileRef = 04FE4D4FB640E0DF92DFB865 /* images */; };
 		3A631A475DE035FC53ADE5EA /* res.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7F3B12E3C9D554D9FE28101D /* res.xml */; };
 		C8860D93875589970329DCCD /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 4DA100C319512824B7570663 /* fonts */; };
-		DA49ED8903C628BA578C8670 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0BF9628FC8D38F9748F0CDEB /* main.cpp */; };
+		DA49ED8903C628BA578C8670 /* main.cc in Sources */ = {isa = PBXBuildFile; fileRef = 0BF9628FC8D38F9748F0CDEB /* main.cc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,7 +99,7 @@
 		04A57D761871FFEB0068B1E5 /* oxygine_macosx.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = oxygine_macosx.xcodeproj; path = "../../../../ccApps/oxygine/oxygine-framework//oxygine/SDL/macosx/oxygine_macosx/oxygine_macosx.xcodeproj"; sourceTree = "<group>"; };
 		04A57D7E1872012A0068B1E5 /* SDL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL.xcodeproj; path = "../../../../ccApps/oxygine//SDL/Xcode/SDL/SDL.xcodeproj"; sourceTree = "<group>"; };
 		04FE4D4FB640E0DF92DFB865 /* images */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; name = images; path = ../data/images; sourceTree = "<group>"; };
-		0BF9628FC8D38F9748F0CDEB /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../src/main.cpp; sourceTree = "<group>"; };
+		0BF9628FC8D38F9748F0CDEB /* main.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cc; path = ../src/main.cc; sourceTree = "<group>"; };
 		147E0EC91E0A7A6700FC4254 /* core.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = core.cc; path = ../src/engine/core.cc; sourceTree = "<group>"; };
 		147E0ECA1E0A7A6700FC4254 /* core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = core.h; path = ../src/engine/core.h; sourceTree = "<group>"; };
 		147E0ED01E0A7BAC00FC4254 /* Types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Types.h; path = ../src/engine/Types.h; sourceTree = "<group>"; };
@@ -210,7 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				147E0ECF1E0A7B6400FC4254 /* engine */,
-				0BF9628FC8D38F9748F0CDEB /* main.cpp */,
+				0BF9628FC8D38F9748F0CDEB /* main.cc */,
 				147E0EE21E0ABF0100FC4254 /* MyGame.cc */,
 				147E0EE31E0ABF0100FC4254 /* MyGame.h */,
 				147E0EEB1E0BB2E800FC4254 /* Loading.cc */,
@@ -368,7 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				147E0EDD1E0A833700FC4254 /* System.cc in Sources */,
-				DA49ED8903C628BA578C8670 /* main.cpp in Sources */,
+				DA49ED8903C628BA578C8670 /* main.cc in Sources */,
 				147E0EED1E0BB2E800FC4254 /* Loading.cc in Sources */,
 				147E0ECB1E0A7A6700FC4254 /* core.cc in Sources */,
 				147E0EE71E0B731D00FC4254 /* Gfx.cc in Sources */,
