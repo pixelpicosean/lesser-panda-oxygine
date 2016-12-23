@@ -51,9 +51,8 @@ adjusted to be better to use in C++.
 Add a new system:
 
 ```cpp
-this
-  ->addSystem<lp::Gfx>()
-  ->addSystem<lp::Input>();
+this->addSystem<lp::Gfx>();
+this->addSystem<lp::Input>();
 ```
 
 
