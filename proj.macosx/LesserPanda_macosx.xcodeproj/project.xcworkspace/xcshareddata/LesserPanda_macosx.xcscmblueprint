@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "D40EA211A665EF1E9AC612BBCB04CF34F1960577",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "D40EA211A665EF1E9AC612BBCB04CF34F1960577" : 9223372036854775807,
+    "52A48B60B20C16BF17C218B40EC7BD81DB998CDB" : 9223372036854775807,
+    "080859DCFFBED59897A93F8140873F7889C62DCD" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F2FFD991-C674-43B2-9350-F782A9E3FB67",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "D40EA211A665EF1E9AC612BBCB04CF34F1960577" : "lesser-panda-oxygine\/",
+    "52A48B60B20C16BF17C218B40EC7BD81DB998CDB" : "SDL\/",
+    "080859DCFFBED59897A93F8140873F7889C62DCD" : "oxygine-framework\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "LesserPanda_macosx",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "proj.macosx\/LesserPanda_macosx.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/pixelpicosean\/oxygine-framework.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "080859DCFFBED59897A93F8140873F7889C62DCD"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/oxygine\/SDL2.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "52A48B60B20C16BF17C218B40EC7BD81DB998CDB"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/pixelpicosean\/lesser-panda-oxygine.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D40EA211A665EF1E9AC612BBCB04CF34F1960577"
+    }
+  ]
+}

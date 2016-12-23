@@ -3,7 +3,7 @@
 Native LesserPanda framework written in C++, powered by Oxygine. This
 will very likely to replace the [lesser-panda-native]().
 
-## Getting started
+## Setup
 
 This project can be built for several platforms, each with some specific
 setups. Follow the steps to make it work properly.
@@ -41,3 +41,24 @@ you'll get a working setup.
 1. Install `fips` and `emscripten`
 2. Export your `oxygine-framework` and `emscripten` folder to `PATH`
 3. Open `proj.cmake` and run scripts
+
+## Getting start
+
+I'll try my best to keep the same API as the JavaScript version, but slightly
+adjusted to be better to use in C++.
+
+
+Add a new system:
+
+```cpp
+this
+  ->addSystem<lp::Gfx>()
+  ->addSystem<lp::Input>();
+```
+
+
+Spawn an `Entity`:
+
+```cpp
+auto player = this->spawnEntity<MyMarioEntity>(100, 100, "actors");
+```

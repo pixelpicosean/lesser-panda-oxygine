@@ -59,15 +59,13 @@ namespace lp {
       }
 
       template <typename S>
-      SystemManager& addSystem(S* system) {
+      void addSystem(S* system) {
         this->systems.insert(std::make_pair(S::type(), system));
-
-        return *this;
       }
 
       template <typename S, typename ... Args>
-      SystemManager& addSystem(Args && ... args) {
-        return this->addSystem(new S(std::forward<Args>(args) ...));
+      void addSystem(Args && ... args) {
+        this->addSystem(new S(std::forward<Args>(args) ...));
       }
 
     protected:
