@@ -19,6 +19,8 @@ add_executable(LesserPanda
   ../src/engine/Game.hpp
   ../src/engine/Gfx.cpp
   ../src/engine/Gfx.hpp
+  ../src/engine/Input.cpp
+  ../src/engine/Input.hpp
   ../src/engine/NonCopyable.hpp
   ../src/engine/System.cpp
   ../src/engine/System.hpp
