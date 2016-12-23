@@ -23,6 +23,7 @@
 		147E0F991E0D154600FC4254 /* global.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 147E0F931E0D154600FC4254 /* global.cpp */; };
 		147E0F9A1E0D154600FC4254 /* Loading.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 147E0F951E0D154600FC4254 /* Loading.cpp */; };
 		147E0F9B1E0D154600FC4254 /* MyGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 147E0F971E0D154600FC4254 /* MyGame.cpp */; };
+		147E0FA31E0D1C8E00FC4254 /* Input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 147E0FA11E0D1C8E00FC4254 /* Input.cpp */; };
 		1E839D002B2BA83FC83A695A /* images in Resources */ = {isa = PBXBuildFile; fileRef = 04FE4D4FB640E0DF92DFB865 /* images */; };
 		3A631A475DE035FC53ADE5EA /* res.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7F3B12E3C9D554D9FE28101D /* res.xml */; };
 		C8860D93875589970329DCCD /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 4DA100C319512824B7570663 /* fonts */; };
@@ -119,6 +120,8 @@
 		147E0F971E0D154600FC4254 /* MyGame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MyGame.cpp; path = ../src/game/MyGame.cpp; sourceTree = "<group>"; };
 		147E0F981E0D154600FC4254 /* MyGame.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = MyGame.hpp; path = ../src/game/MyGame.hpp; sourceTree = "<group>"; };
 		147E0F9C1E0D154E00FC4254 /* entry.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = entry.hpp; path = ../src/entry.hpp; sourceTree = "<group>"; };
+		147E0FA11E0D1C8E00FC4254 /* Input.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Input.cpp; path = ../src/engine/Input.cpp; sourceTree = "<group>"; };
+		147E0FA21E0D1C8E00FC4254 /* Input.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Input.hpp; path = ../src/engine/Input.hpp; sourceTree = "<group>"; };
 		4DA100C319512824B7570663 /* fonts */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; name = fonts; path = ../data/fonts; sourceTree = "<group>"; };
 		7F3B12E3C9D554D9FE28101D /* res.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wtf; name = res.xml; path = ../data/res.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -245,18 +248,20 @@
 		147E0F811E0D152E00FC4254 /* engine */ = {
 			isa = PBXGroup;
 			children = (
+				147E0F8D1E0D153C00FC4254 /* Types.hpp */,
+				147E0F8A1E0D153C00FC4254 /* NonCopyable.hpp */,
 				147E0F821E0D153C00FC4254 /* core.cpp */,
 				147E0F831E0D153C00FC4254 /* core.hpp */,
 				147E0F841E0D153C00FC4254 /* Entity.cpp */,
 				147E0F851E0D153C00FC4254 /* Entity.hpp */,
 				147E0F861E0D153C00FC4254 /* Game.cpp */,
 				147E0F871E0D153C00FC4254 /* Game.hpp */,
-				147E0F881E0D153C00FC4254 /* Gfx.cpp */,
-				147E0F891E0D153C00FC4254 /* Gfx.hpp */,
-				147E0F8A1E0D153C00FC4254 /* NonCopyable.hpp */,
 				147E0F8B1E0D153C00FC4254 /* System.cpp */,
 				147E0F8C1E0D153C00FC4254 /* System.hpp */,
-				147E0F8D1E0D153C00FC4254 /* Types.hpp */,
+				147E0F881E0D153C00FC4254 /* Gfx.cpp */,
+				147E0F891E0D153C00FC4254 /* Gfx.hpp */,
+				147E0FA11E0D1C8E00FC4254 /* Input.cpp */,
+				147E0FA21E0D1C8E00FC4254 /* Input.hpp */,
 			);
 			name = engine;
 			sourceTree = "<group>";
@@ -381,6 +386,7 @@
 				147E0F8E1E0D153C00FC4254 /* core.cpp in Sources */,
 				147E0F9A1E0D154600FC4254 /* Loading.cpp in Sources */,
 				147E0F8F1E0D153C00FC4254 /* Entity.cpp in Sources */,
+				147E0FA31E0D1C8E00FC4254 /* Input.cpp in Sources */,
 				147E0F911E0D153C00FC4254 /* Gfx.cpp in Sources */,
 				147E0F9B1E0D154600FC4254 /* MyGame.cpp in Sources */,
 				DA49ED8903C628BA578C8670 /* main.cpp in Sources */,

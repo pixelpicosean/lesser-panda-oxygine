@@ -38,7 +38,7 @@ namespace lp {
           this->gfx->setPosition(this->position);
         }
       }
-      oxygine::Vector2 getPosition(float x, float y) {
+      oxygine::Vector2 getPosition() {
         return this->position;
       }
 

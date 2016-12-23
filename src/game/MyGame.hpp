@@ -47,7 +47,6 @@ namespace game {
 
     private:
       Button *button = nullptr;
-      float timer = 0.0f;
   };
 
 }
