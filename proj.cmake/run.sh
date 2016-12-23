@@ -13,4 +13,4 @@ make
 cd ../../data
 
 #run executable
-./../proj.cmake/build/HelloMac
+./../proj.cmake/build/LesserPanda

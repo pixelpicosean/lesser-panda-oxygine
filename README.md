@@ -10,15 +10,15 @@ setups. Follow the steps to make it work properly.
 
 ### Windows
 
-Open the `proj.win32/HelloMac.sln` with **Visual Studio** and build
+Open the `proj.win32/LesserPanda.sln` with **Visual Studio** and build
 
 ### macOS
 
-Open the `proj.macosx/HelloMac_macosx.xcodeproj` with **XCode** and build
+Open the `proj.macosx/LesserPanda_macosx.xcodeproj` with **XCode** and build
 
 ### iOS
 
-Open the `proj.ios/HelloMac_ios.xcodeproj` with **XCode** and build
+Open the `proj.ios/LesserPanda_ios.xcodeproj` with **XCode** and build
 
 ### Android
 

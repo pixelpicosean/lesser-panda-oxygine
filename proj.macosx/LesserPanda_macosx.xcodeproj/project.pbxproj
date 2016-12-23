@@ -88,13 +88,13 @@
 		04059FF11872031A00BA6557 /* libpng.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpng.a; path = "../../../../ccApps/oxygine/oxygine-framework//oxygine/third_party/macosx/libraries/libpng.a"; sourceTree = "<group>"; };
 		04059FF4187203A600BA6557 /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjpeg.a; path = "../../../../ccApps/oxygine/oxygine-framework//oxygine/third_party/ios/libraries/libjpeg.a"; sourceTree = "<group>"; };
 		04059FF5187203A600BA6557 /* libpng.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpng.a; path = "../../../../ccApps/oxygine/oxygine-framework//oxygine/third_party/ios/libraries/libpng.a"; sourceTree = "<group>"; };
-		049B572E1871FBE900EF3C66 /* HelloMac_macosx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloMac_macosx.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		049B572E1871FBE900EF3C66 /* LesserPanda_macosx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LesserPanda_macosx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		049B57311871FBE900EF3C66 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		049B57341871FBE900EF3C66 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		049B57351871FBE900EF3C66 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		049B57361871FBE900EF3C66 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		049B57391871FBE900EF3C66 /* HelloMac_macosx-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HelloMac_macosx-Info.plist"; sourceTree = "<group>"; };
-		049B57491871FBE900EF3C66 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = HelloMac/Images.xcassets; sourceTree = "<group>"; };
+		049B57391871FBE900EF3C66 /* LesserPanda_macosx-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LesserPanda_macosx-Info.plist"; sourceTree = "<group>"; };
+		049B57491871FBE900EF3C66 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = LesserPanda/Images.xcassets; sourceTree = "<group>"; };
 		049B57501871FBE900EF3C66 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		04A57D761871FFEB0068B1E5 /* oxygine_macosx.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = oxygine_macosx.xcodeproj; path = "../../../../ccApps/oxygine/oxygine-framework//oxygine/SDL/macosx/oxygine_macosx/oxygine_macosx.xcodeproj"; sourceTree = "<group>"; };
 		04A57D7E1872012A0068B1E5 /* SDL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL.xcodeproj; path = "../../../../ccApps/oxygine//SDL/Xcode/SDL/SDL.xcodeproj"; sourceTree = "<group>"; };
@@ -165,7 +165,7 @@
 		049B572F1871FBE900EF3C66 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				049B572E1871FBE900EF3C66 /* HelloMac_macosx.app */,
+				049B572E1871FBE900EF3C66 /* LesserPanda_macosx.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -202,7 +202,7 @@
 				4DA100C319512824B7570663 /* fonts */,
 				04FE4D4FB640E0DF92DFB865 /* images */,
 				7F3B12E3C9D554D9FE28101D /* res.xml */,
-				049B57391871FBE900EF3C66 /* HelloMac_macosx-Info.plist */,
+				049B57391871FBE900EF3C66 /* LesserPanda_macosx-Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -264,9 +264,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		049B572D1871FBE900EF3C66 /* HelloMac_macosx */ = {
+		049B572D1871FBE900EF3C66 /* LesserPanda_macosx */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 049B575F1871FBE900EF3C66 /* Build configuration list for PBXNativeTarget "HelloMac_macosx" */;
+			buildConfigurationList = 049B575F1871FBE900EF3C66 /* Build configuration list for PBXNativeTarget "LesserPanda_macosx" */;
 			buildPhases = (
 				049B572A1871FBE900EF3C66 /* Sources */,
 				049B572B1871FBE900EF3C66 /* Frameworks */,
@@ -278,9 +278,9 @@
 				04059FE91872027200BA6557 /* PBXTargetDependency */,
 				04A57D8F187201EF0068B1E5 /* PBXTargetDependency */,
 			);
-			name = HelloMac_macosx;
-			productName = HelloMac;
-			productReference = 049B572E1871FBE900EF3C66 /* HelloMac_macosx.app */;
+			name = LesserPanda_macosx;
+			productName = LesserPanda;
+			productReference = 049B572E1871FBE900EF3C66 /* LesserPanda_macosx.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -292,7 +292,7 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = oxygine;
 			};
-			buildConfigurationList = 049B57291871FBE900EF3C66 /* Build configuration list for PBXProject "HelloMac_macosx" */;
+			buildConfigurationList = 049B57291871FBE900EF3C66 /* Build configuration list for PBXProject "LesserPanda_macosx" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -315,7 +315,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				049B572D1871FBE900EF3C66 /* HelloMac_macosx */,
+				049B572D1871FBE900EF3C66 /* LesserPanda_macosx */,
 			);
 		};
 /* End PBXProject section */
@@ -495,15 +495,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "HelloMac/HelloMac_macosx-Prefix.pch";
-				INFOPLIST_FILE = "HelloMac_macosx-Info.plist";
+				GCC_PREFIX_HEADER = "LesserPanda/LesserPanda_macosx-Prefix.pch";
+				INFOPLIST_FILE = "LesserPanda_macosx-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"../../../../ccApps/oxygine/oxygine-framework//oxygine/third_party/macosx/libraries",
 					"../../../../ccApps/oxygine/oxygine-framework//oxygine/third_party/ios/libraries",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.reddypanda.lab.HelloOxygine;
-				PRODUCT_NAME = HelloMac_macosx;
+				PRODUCT_NAME = LesserPanda_macosx;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -514,15 +514,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "HelloMac/HelloMac_macosx-Prefix.pch";
-				INFOPLIST_FILE = "HelloMac_macosx-Info.plist";
+				GCC_PREFIX_HEADER = "LesserPanda/LesserPanda_macosx-Prefix.pch";
+				INFOPLIST_FILE = "LesserPanda_macosx-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"../../../../ccApps/oxygine/oxygine-framework//oxygine/third_party/macosx/libraries",
 					"../../../../ccApps/oxygine/oxygine-framework//oxygine/third_party/ios/libraries",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.reddypanda.lab.HelloOxygine;
-				PRODUCT_NAME = HelloMac_macosx;
+				PRODUCT_NAME = LesserPanda_macosx;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -530,7 +530,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		049B57291871FBE900EF3C66 /* Build configuration list for PBXProject "HelloMac_macosx" */ = {
+		049B57291871FBE900EF3C66 /* Build configuration list for PBXProject "LesserPanda_macosx" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				049B575D1871FBE900EF3C66 /* Debug */,
@@ -539,7 +539,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		049B575F1871FBE900EF3C66 /* Build configuration list for PBXNativeTarget "HelloMac_macosx" */ = {
+		049B575F1871FBE900EF3C66 /* Build configuration list for PBXNativeTarget "LesserPanda_macosx" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				049B57601871FBE900EF3C66 /* Debug */,

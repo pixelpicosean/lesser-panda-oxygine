@@ -1,4 +1,4 @@
-package org.oxygine.HelloMac;
+package org.oxygine.LesserPanda;
 
 import org.oxygine.lib.OxygineActivity;
 

@@ -13,8 +13,8 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{2B4D7491-A4F8-4606-B0E3-2A1FCE3C46C4}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>HelloMac</RootNamespace>
-    <ProjectName>HelloMac</ProjectName>
+    <RootNamespace>LesserPanda</RootNamespace>
+    <ProjectName>LesserPanda</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
 
@@ -34,10 +34,10 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    
+
     <WholeProgramOptimization>false</WholeProgramOptimization>
     <WholeProgramOptimization Condition="'$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '14.0'">true</WholeProgramOptimization>
-    
+
 
     <CharacterSet>Unicode</CharacterSet>
     <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
@@ -111,7 +111,7 @@
       <AdditionalOptions>/ignore:4099 %(AdditionalOptions)</AdditionalOptions>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>    
+  <ItemGroup>
     <ProjectReference Include="../../../../ccApps/oxygine/oxygine-framework/\oxygine\SDL\win32\oxygine.vcxproj">
       <Project>{52411305-cfe1-4fa8-9885-5729bfc816cf}</Project>
     </ProjectReference>
