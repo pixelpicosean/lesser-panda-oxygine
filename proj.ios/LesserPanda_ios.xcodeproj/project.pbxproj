@@ -30,6 +30,7 @@
 		147E0F761E0D14B100FC4254 /* Loading.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 147E0F711E0D14B100FC4254 /* Loading.cpp */; };
 		147E0F771E0D14B100FC4254 /* MyGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 147E0F731E0D14B100FC4254 /* MyGame.cpp */; };
 		147E0F7A1E0D14BB00FC4254 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 147E0F791E0D14BB00FC4254 /* main.cpp */; };
+		147E0FAB1E0D338500FC4254 /* Input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 147E0FA91E0D338500FC4254 /* Input.cpp */; };
 		1E839D002B2BA83FC83A695A /* images in Resources */ = {isa = PBXBuildFile; fileRef = 04FE4D4FB640E0DF92DFB865 /* images */; };
 		3A631A475DE035FC53ADE5EA /* res.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7F3B12E3C9D554D9FE28101D /* res.xml */; };
 		9223FE7F1C2D913D000B1FDA /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9223FE7E1C2D913D000B1FDA /* GameController.framework */; };
@@ -112,6 +113,8 @@
 		147E0F741E0D14B100FC4254 /* MyGame.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = MyGame.hpp; path = ../src/game/MyGame.hpp; sourceTree = "<group>"; };
 		147E0F781E0D14BB00FC4254 /* entry.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = entry.hpp; path = ../src/entry.hpp; sourceTree = "<group>"; };
 		147E0F791E0D14BB00FC4254 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../src/main.cpp; sourceTree = "<group>"; };
+		147E0FA91E0D338500FC4254 /* Input.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Input.cpp; path = ../src/engine/Input.cpp; sourceTree = "<group>"; };
+		147E0FAA1E0D338500FC4254 /* Input.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Input.hpp; path = ../src/engine/Input.hpp; sourceTree = "<group>"; };
 		4DA100C319512824B7570663 /* fonts */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; name = fonts; path = ../data/fonts; sourceTree = "<group>"; };
 		7F3B12E3C9D554D9FE28101D /* res.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wtf; name = res.xml; path = ../data/res.xml; sourceTree = "<group>"; };
 		9223FE7E1C2D913D000B1FDA /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
@@ -247,6 +250,8 @@
 		147E0F5D1E0D149300FC4254 /* engine */ = {
 			isa = PBXGroup;
 			children = (
+				147E0FA91E0D338500FC4254 /* Input.cpp */,
+				147E0FAA1E0D338500FC4254 /* Input.hpp */,
 				147E0F5E1E0D14A400FC4254 /* core.cpp */,
 				147E0F5F1E0D14A400FC4254 /* core.hpp */,
 				147E0F601E0D14A400FC4254 /* Entity.cpp */,
@@ -369,6 +374,7 @@
 				147E0F6C1E0D14A400FC4254 /* Game.cpp in Sources */,
 				147E0F7A1E0D14BB00FC4254 /* main.cpp in Sources */,
 				147E0F751E0D14B100FC4254 /* global.cpp in Sources */,
+				147E0FAB1E0D338500FC4254 /* Input.cpp in Sources */,
 				147E0F771E0D14B100FC4254 /* MyGame.cpp in Sources */,
 				147E0F6D1E0D14A400FC4254 /* Gfx.cpp in Sources */,
 				147E0F761E0D14B100FC4254 /* Loading.cpp in Sources */,
