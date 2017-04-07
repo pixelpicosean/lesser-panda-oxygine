@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04059FEA1872027500BA6557 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04A57D861872012D0068B1E5 /* SDL2.framework */; };
 		04059FEB1872027B00BA6557 /* liboxygine_macosx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04059FE41872026200BA6557 /* liboxygine_macosx.a */; };
 		04059FED187202A200BA6557 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04059FEC187202A200BA6557 /* libz.dylib */; };
 		04059FEF187202AC00BA6557 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04059FEE187202AC00BA6557 /* OpenGL.framework */; };
@@ -15,6 +14,8 @@
 		0405A00118720D2200BA6557 /* libpng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04059FF11872031A00BA6557 /* libpng.a */; };
 		049B57321871FBE900EF3C66 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049B57311871FBE900EF3C66 /* Cocoa.framework */; };
 		049B574A1871FBE900EF3C66 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049B57491871FBE900EF3C66 /* Images.xcassets */; };
+		142A7C3A1E8FE68E00E3A9FA /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04A57D861872012D0068B1E5 /* SDL2.framework */; };
+		142A7C3B1E8FE6A200E3A9FA /* SDL2.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 04A57D861872012D0068B1E5 /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		147E0F8E1E0D153C00FC4254 /* core.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 147E0F821E0D153C00FC4254 /* core.cpp */; };
 		147E0F8F1E0D153C00FC4254 /* Entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 147E0F841E0D153C00FC4254 /* Entity.cpp */; };
 		147E0F901E0D153C00FC4254 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 147E0F861E0D153C00FC4254 /* Game.cpp */; };
@@ -73,7 +74,7 @@
 			remoteGlobalIDString = BECDF6BE0761BA81005FE872;
 			remoteInfo = "Standard DMG";
 		};
-		04A57D8E187201EF0068B1E5 /* PBXContainerItemProxy */ = {
+		142A7C381E8FE68600E3A9FA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 04A57D7E1872012A0068B1E5 /* SDL.xcodeproj */;
 			proxyType = 1;
@@ -81,6 +82,19 @@
 			remoteInfo = Framework;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		142A7C361E8FE63900E3A9FA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				142A7C3B1E8FE6A200E3A9FA /* SDL2.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		04059FEC187202A200BA6557 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -131,12 +145,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				142A7C3A1E8FE68E00E3A9FA /* SDL2.framework in Frameworks */,
 				0405A00018720D2200BA6557 /* libjpeg.a in Frameworks */,
 				0405A00118720D2200BA6557 /* libpng.a in Frameworks */,
 				04059FEF187202AC00BA6557 /* OpenGL.framework in Frameworks */,
 				04059FED187202A200BA6557 /* libz.dylib in Frameworks */,
 				04059FEB1872027B00BA6557 /* liboxygine_macosx.a in Frameworks */,
-				04059FEA1872027500BA6557 /* SDL2.framework in Frameworks */,
 				049B57321871FBE900EF3C66 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,12 +290,13 @@
 				049B572A1871FBE900EF3C66 /* Sources */,
 				049B572B1871FBE900EF3C66 /* Frameworks */,
 				049B572C1871FBE900EF3C66 /* Resources */,
+				142A7C361E8FE63900E3A9FA /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				142A7C391E8FE68600E3A9FA /* PBXTargetDependency */,
 				04059FE91872027200BA6557 /* PBXTargetDependency */,
-				04A57D8F187201EF0068B1E5 /* PBXTargetDependency */,
 			);
 			name = LesserPanda_macosx;
 			productName = LesserPanda;
@@ -403,10 +418,10 @@
 			name = oxygine_macosx;
 			targetProxy = 04059FE81872027200BA6557 /* PBXContainerItemProxy */;
 		};
-		04A57D8F187201EF0068B1E5 /* PBXTargetDependency */ = {
+		142A7C391E8FE68600E3A9FA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Framework;
-			targetProxy = 04A57D8E187201EF0068B1E5 /* PBXContainerItemProxy */;
+			targetProxy = 142A7C381E8FE68600E3A9FA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -492,6 +507,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LesserPanda/LesserPanda_macosx-Prefix.pch";
 				INFOPLIST_FILE = "LesserPanda_macosx-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"../../oxygine-framework//oxygine/third_party/macosx/libraries",
@@ -510,6 +526,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LesserPanda/LesserPanda_macosx-Prefix.pch";
 				INFOPLIST_FILE = "LesserPanda_macosx-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"../../oxygine-framework//oxygine/third_party/macosx/libraries",
